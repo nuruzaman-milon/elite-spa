@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.hero {
+  background-image: url("/images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
