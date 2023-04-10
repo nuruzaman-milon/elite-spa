@@ -32,7 +32,7 @@ const Navbar = () => {
       <p className="hidden lg:flex items-center gap-x-4 justify-center text-base-100 text-sm py-1">
         CALL800.BE.IDEAL | <Link href="/">LOG IN</Link>
       </p>
-      <div className="text-basic-color bg-secondary-color h-20 z-50 flex items-center justify-center gap-x-28 text-primary-color relative border-b lg:border-none">
+      <div className="text-basic-color bg-secondary-color h-20 z-50 flex items-center justify-center gap-x-36 text-primary-color relative border-b lg:border-none">
         <div className="flex items-center justify-around w-full lg:w-auto">
           {/* show on all devices */}
           <h1 className="text-3xl font-extrabold text-dark-color">
@@ -144,13 +144,18 @@ const Navbar = () => {
         </ul>
       </div>
       {cross === false && (
-        <div className="flex items-center gap-x-4 justify-center text-base-100 text-sm py-2">
-          <p>GIVE THE GIFT OF CONFIDENCE! </p>
-          <p className="hidden md:flex">DIGITAL GIFT CART AVAILABLE</p>
-          <Link className="border rounded-full px-2" href="/">
+        <div className="flex items-center gap-x-4 justify-center text-sm py-2 !text-base-100">
+          <p className="text-base-100">GIVE THE GIFT OF CONFIDENCE! </p>
+          <p className="hidden md:flex text-base-100">
+            DIGITAL GIFT CART AVAILABLE
+          </p>
+          <Link className="border rounded-full px-2 text-base-100" href="/">
             SHOP NOW
           </Link>
-          <button onClick={() => handleCross(true)} className="ml-20">
+          <button
+            onClick={() => handleCross(true)}
+            className="ml-20 !text-base-100 text-color-cus"
+          >
             <FontAwesomeIcon icon={faXmark} />
           </button>
         </div>
