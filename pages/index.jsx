@@ -39,7 +39,7 @@ const index = () => {
               Lipo Laser
             </h2>
             <p className="text-center">
-              *Minimum purchase required. Participating location only.
+              *Minimum purchase required. Participating locations only.
             </p>
           </Link>
           <Link href="">
