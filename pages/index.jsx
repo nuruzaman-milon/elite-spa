@@ -29,7 +29,7 @@ const index = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-2/3 mx-auto mt-10">
           <Link href="/">
             <Image
-              src="/images/lipo Laser.jpg"
+              src="/images/lipo-Laser.jpg"
               alt="My Image"
               width={500}
               height={500}
@@ -59,7 +59,7 @@ const index = () => {
           </Link>
           <Link href="">
             <Image
-              src="/images/EMS Shimming.jpg"
+              src="/images/EMS-Shimming.jpg"
               alt="My Image"
               width={500}
               height={500}
@@ -74,7 +74,7 @@ const index = () => {
           </Link>
           <Link href="">
             <Image
-              src="/images/7d hifu.jpg"
+              src="/images/7dhifu.jpg"
               alt="My Image"
               width={500}
               height={500}
