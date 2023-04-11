@@ -40,6 +40,7 @@ select:focus option {
 /* Webkit-based browsers */
 ::-webkit-scrollbar {
   width: 4px !important;
+  height: 8px !important;
 }
 
 ::-webkit-scrollbar-track {

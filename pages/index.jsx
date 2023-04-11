@@ -26,7 +26,7 @@ const index = () => {
         </section>
 
         {/* show services section  */}
-        <section className="flex gap-x-6 w-5/6 mx-auto mt-10">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-5/6 mx-auto mt-10">
           <Link href="/">
             <Image
               src="/images/service.jpg"
