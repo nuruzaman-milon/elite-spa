@@ -65,3 +65,22 @@ select:focus option {
 .card:hover .card-header {
   text-decoration: underline;
 }
+
+/********** contact us  ************/
+.top-navbar {
+  background-image: url("/images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/********** about us  ************/
+.about-us-bg-img {
+  background-image: url("/images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* parallax  */
+.bgStyle {
+  filter: brightness(90%);
+}

@@ -26,10 +26,10 @@ const index = () => {
         </section>
 
         {/* show services section  */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-5/6 mx-auto mt-10">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-2/3 mx-auto mt-10">
           <Link href="/">
             <Image
-              src="/images/service.jpg"
+              src="/images/lipo Laser.jpg"
               alt="My Image"
               width={500}
               height={500}
@@ -44,7 +44,7 @@ const index = () => {
           </Link>
           <Link href="">
             <Image
-              src="/images/service.jpg"
+              src="/images/Fat-Freezing.jpg"
               alt="My Image"
               width={500}
               height={500}
@@ -59,7 +59,7 @@ const index = () => {
           </Link>
           <Link href="">
             <Image
-              src="/images/service.jpg"
+              src="/images/EMS Shimming.jpg"
               alt="My Image"
               width={500}
               height={500}
@@ -74,7 +74,7 @@ const index = () => {
           </Link>
           <Link href="">
             <Image
-              src="/images/service.jpg"
+              src="/images/7d hifu.jpg"
               alt="My Image"
               width={500}
               height={500}
@@ -93,10 +93,10 @@ const index = () => {
         <h2 className="text-center font-extrabold text-3xl mt-20">
           Treatments That Work, Results You’ll Love
         </h2>
-        <section className="flex gap-x-6 w-4/6 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div">
+        <section className="flex gap-x-6 w-2/3 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div">
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -117,7 +117,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -138,7 +138,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -159,7 +159,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -180,7 +180,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -201,7 +201,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -222,7 +222,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -243,7 +243,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -264,7 +264,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
@@ -285,7 +285,7 @@ const index = () => {
           </Link>
           <Link
             href=""
-            className="w-80 flex-shrink-0 shadow-md rounded-xl card"
+            className="w-72 flex-shrink-0 shadow-md rounded-xl card"
           >
             <Image
               src="/images/service.jpg"
