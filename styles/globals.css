@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* tailwind component class  */
+.text-style {
+  @apply text-lg font-medium;
+}
+.header-style {
+  @apply text-3xl font-bold;
+}
+
 * {
   font-family: "Noto Sans", sans-serif;
   color: #4a5c80;
@@ -78,6 +86,14 @@ select:focus option {
   background-image: url("/images/homepage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/********** service-lipo laser  ************/
+.lipo-laser-bg-img {
+  background-image: url("/images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
 
 /* parallax  */

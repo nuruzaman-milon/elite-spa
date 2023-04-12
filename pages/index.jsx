@@ -2,6 +2,8 @@ import Button from "@/components/Button";
 import ButtonUnderline from "@/components/ButtonUnderline";
 import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
+import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,17 +13,17 @@ const index = () => {
       <div>
         {/* hero secton */}
         <section className="hero w-full h-[60vh] relative">
-          <div className="flex flex-col items-center absolute top-3/4 left-1/4 gap-y-6">
-            <select
-              className="w-max px-4 py-2 rounded-md ring-0 focus:border-none text-primary-color"
-              name="service"
-              id="service"
-            >
-              <option value="">Removing Unwanted Hair</option>
-              <option value="">Fat Reduction</option>
-              <option value="">Muscle Toning</option>
-            </select>
-            <Button name="Get Started" />
+          <div className="w-2/3 mx-auto">
+            <div className="flex flex-col items-center absolute top-1/4 gap-y-6">
+              {/* <h1 className="header-style">ELITE SPA</h1> */}
+              <h2 className="header-style">BODY SCULPTING</h2>
+              <h2 className="header-style">&</h2>
+              <h2 className="header-style">WEIGHT LOSS SERVICES</h2>
+              <button className="w-max bg-primary-color text-white rounded-full uppercase py-2 px-4 hover:bg-dark-color transition-colors duration-500 ease-in-out text-color-cus">
+                <FontAwesomeIcon className="mr-1" icon={faAnglesLeft} />
+                EXPLORE NOW
+              </button>
+            </div>
           </div>
         </section>
 
@@ -91,7 +93,7 @@ const index = () => {
 
         {/* all treatements */}
         <h2 className="text-center font-extrabold text-3xl mt-20">
-          Treatments That Work, Results You’ll Love
+          FEATURED SERVICES
         </h2>
         <section className="flex gap-x-6 w-2/3 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div">
           <Link

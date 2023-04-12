@@ -1,5 +1,6 @@
 import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
+import Locations from "@/components/Locations";
 import React from "react";
 
 const contactUs = () => {
@@ -72,7 +73,7 @@ const contactUs = () => {
           <h2 className="text-3xl font-bold mt-10 mb-6 text-center">
             Our Locations
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
             <div className="flex flex-col gap-y-2 shadow-lg rounded-lg text-center p-2">
               <h2 className="text-xl font-bold">St. Petersburg</h2>
               <p>9609 Bay Pines Blvd, St. Petersburg, FL 33708</p>
@@ -117,57 +118,9 @@ const contactUs = () => {
                 <span className="font-semibold">Phone:</span> (727)-505-4991
               </p>
             </div>
-            <div className="flex flex-col gap-y-2 shadow-lg text-center p-2 rounded-lg">
-              <h2 className="text-xl font-bold">New York</h2>
-              <p>2632 E 21st Street, Suite 1, Brooklyn, NY 11235</p>
-              <p>
-                <span className="font-semibold">Email:</span>{" "}
-                elitespaFL@hotmail.com
-              </p>
-              <p>
-                <span className="font-semibold">Phone:</span> +1 (347) 258-0925
-              </p>
-            </div>
           </div>
-          <div className="my-10">
-            <iframe
-              width="100%"
-              height="300"
-              title="PetersBurg"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=9609%20Bay%20Pines%20Blvd,%20St.%20Petersburg,%20FL%2033708+(Petersburg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            >
-              distance maps
-            </iframe>
-          </div>
-          <div className="my-10">
-            <iframe
-              width="100%"
-              height="300"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=10347%20Cross%20Creek%20Blvd,%20Suite%20D,%20Tampa,%20FL%2033647-2992+(Petersburg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            >
-              area maps
-            </iframe>
-          </div>
-          <div className="my-10">
-            <iframe
-              width="100%"
-              height="300"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=8807%20River%20Crossing,%20New%20Port%20Richey,%20FL%2034655+(Petersburg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            >
-              areal maps
-            </iframe>
+          <div>
+            <Locations />
           </div>
         </div>
       </div>
