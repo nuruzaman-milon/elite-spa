@@ -1,6 +1,7 @@
 import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
 import ParallaxComponent from "@/components/ParallaxComponent";
+import ServiceTopBar from "@/components/ServiceTopBar";
 import Image from "next/image";
 import React from "react";
 
@@ -8,11 +9,10 @@ const aboutUs = () => {
   return (
     <Layout>
       <div>
-        <div className="about-us-bg-img h-96 relative flex items-center">
-          <div className="absolute left-1/4">
-            <ButtonWithAngle name="Get In Touch" />
-          </div>
-        </div>
+        <ServiceTopBar
+          title="About Us"
+          desc="This is our brief infomation. Always feel free to know about us and connect with us."
+        />
         <div className="w-2/3 mx-auto">
           <div className="flex gap-x-10 my-20">
             <Image

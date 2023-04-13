@@ -1,18 +1,17 @@
 import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
 import Locations from "@/components/Locations";
+import ServiceTopBar from "@/components/ServiceTopBar";
 import React from "react";
 
 const contactUs = () => {
   return (
     <Layout>
       <div>
-        <div className="top-navbar h-96 flex items-center relative">
-          {/* <h2 className="text-3xl font-bold absolute left-1/4">Get In Touch</h2> */}
-          <div className="absolute left-1/4">
-            <ButtonWithAngle name="Get In Touch" />
-          </div>
-        </div>
+        <ServiceTopBar
+          title="Contact Us"
+          desc="Feel free to connect with us for any kind of service. We will be proud if we can connect with you."
+        />
         <div className="w-2/3 mx-auto">
           <div className="lg:flex items-center">
             <div className="lg:w-1/3 flex flex-col gap-y-4 items-center lg:items-start">

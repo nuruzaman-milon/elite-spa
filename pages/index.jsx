@@ -286,7 +286,7 @@ const index = () => {
             </div>
           </Link>
         </section>
-        <ButtonUnderline name="View All Services" link="/services" />
+        <ButtonUnderline name="View All Services" link="/shop-service" />
         <div className="flex justify-center">
           <ButtonWithAngle name="Free Consultation"></ButtonWithAngle>
         </div>
