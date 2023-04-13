@@ -15,6 +15,13 @@
   color: #4a5c80;
 }
 
+/* navlink */
+.active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #1e4f8e;
+}
+
 /********* homepage  ***********/
 .hero {
   background-image: url("/images/homepage.jpg");
@@ -99,4 +106,27 @@ select:focus option {
 /* parallax  */
 .bgStyle {
   filter: brightness(90%);
+}
+
+/* carosel  */
+.indiana-scroll-container {
+  color: #002453;
+  background: #000;
+}
+.snap-mandatory {
+  color: #002453;
+  background: #000;
+}
+.bottom-5 button {
+  /* color: #002453; */
+  background: #002453;
+}
+
+/* card  */
+
+.flex.rounded-lg.border.border-gray-200.bg-white.shadow-md.dark\:border-gray-700.dark\:bg-gray-800.flex-col {
+  height: 100%;
+}
+.card-package div img {
+  height: 17rem !important;
 }
