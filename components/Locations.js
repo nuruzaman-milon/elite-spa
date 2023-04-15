@@ -8,10 +8,10 @@ const Locations = () => {
           width="100%"
           height="300"
           title="PetersBurg"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=9609%20Bay%20Pines%20Blvd,%20St.%20Petersburg,%20FL%2033708+(Petersburg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           distance maps
@@ -24,10 +24,10 @@ const Locations = () => {
         <iframe
           width="100%"
           height="300"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=10347%20Cross%20Creek%20Blvd,%20Suite%20D,%20Tampa,%20FL%2033647-2992+(Petersburg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           area maps
@@ -40,10 +40,10 @@ const Locations = () => {
         <iframe
           width="100%"
           height="300"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=8807%20River%20Crossing,%20New%20Port%20Richey,%20FL%2034655+(Petersburg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           areal maps
@@ -56,10 +56,10 @@ const Locations = () => {
         <iframe
           width="100%"
           height="300"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=9661%20Bay%20Pines%20Blvd,%20Seminole,%20FL%2033708+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           areall maps

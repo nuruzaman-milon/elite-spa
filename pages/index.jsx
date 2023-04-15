@@ -8,6 +8,7 @@ import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaUserTie } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 const index = () => {
   return (
@@ -16,19 +17,38 @@ const index = () => {
         {/* hero secton */}
         <section className="hero w-full h-[60vh] relative">
           <div className="w-2/3 mx-auto">
-            <div className="flex flex-col items-left absolute top-1/4 gap-y-6">
+            <div className="flex flex-col items-left absolute top-1/4 gap-y-8">
               <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                 Elite Spa
               </h1>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color">
-                BODY SCULPTING
-              </h2>
-              <h2 className="text-4xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color ml-40">
+
+              <div className="lg:flex gap-x-3">
+                <h2 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color">
+                  We Offer -
+                </h2>
+                <h2 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        "Body Sculpting",
+                        "Weight Loss Services",
+                        "Lipo Laser",
+                        "Fat Freezing Cryolipolysis",
+                        "EMS Slimming Machine",
+                        "7D Hifu System",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </h2>
+              </div>
+              {/* <h2 className="text-4xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color ml-40">
                 &
               </h2>
               <h2 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color">
                 WEIGHT LOSS SERVICES
-              </h2>
+              </h2> */}
               <Link href="/shop-service">
                 <button className="w-max bg-primary-color text-white rounded-full uppercase py-2 px-4 hover:bg-dark-color transition-colors duration-500 ease-in-out text-color-cus">
                   <FontAwesomeIcon className="mr-1" icon={faAnglesLeft} />
@@ -104,7 +124,7 @@ const index = () => {
         </section>
 
         {/* all treatements */}
-        <h2 className="text-center font-extrabold text-3xl mt-20">
+        <h2 className="text-center font-extrabold text-4xl mt-20">
           FEATURED SERVICES
         </h2>
         <section className="flex gap-x-6 w-2/3 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div">

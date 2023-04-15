@@ -20,12 +20,6 @@ const Navbar = () => {
 
   const isActiveForNested = router.pathname.startsWith("/shop-service");
 
-  const handleCross = (props) => {
-    if (props) {
-      setCross(true);
-    }
-  };
-
   const handleToogle = () => {
     setToogle(!toogle);
   };
@@ -128,21 +122,16 @@ const Navbar = () => {
           </Link>
         </h1>
         <ul className="hidden lg:flex items-center gap-x-6">
-          <li
-            className={
-              isActive("/") ? "active hover:font-bold" : "hover:font-bold"
-            }
-          >
+          <li className={isActive("/") ? "active" : "hover:font-bold"}>
             <Link href="/">HOME</Link>
           </li>
           <li
-            className={`flex items-center gap-x-1 cursor-pointer hover:font-bold
-            ${isActiveForNested ? "active" : ""}
+            className={`flex items-center gap-x-1 cursor-pointer
+            ${isActiveForNested ? "active text-color-cus" : "hover:font-bold"}
             
            `}
             onClick={() => handleToogle()}
           >
-            {console.log("test", isActive("/shop-service/lipo-laser"))}
             SERVICES
             {toogle === false && <FontAwesomeIcon icon={faAngleDown} />}
             {toogle && <FontAwesomeIcon icon={faAngleUp} />}
@@ -169,39 +158,19 @@ const Navbar = () => {
               </li>
             </div>
           )}
-          <li
-            className={
-              isActive("/packages")
-                ? "active hover:font-bold"
-                : "hover:font-bold"
-            }
-          >
+          <li className={isActive("/packages") ? "active" : "hover:font-bold"}>
             <Link href="/packages">PACKAGES</Link>
           </li>
           <li
-            className={
-              isActive("/membership")
-                ? "active hover:font-bold"
-                : "hover:font-bold"
-            }
+            className={isActive("/membership") ? "active" : "hover:font-bold"}
           >
             <Link href="/membership">MEMBERSHIP</Link>
           </li>
-          <li
-            className={
-              isActive("/about-us")
-                ? "active hover:font-bold"
-                : "hover:font-bold"
-            }
-          >
+          <li className={isActive("/about-us") ? "active" : "hover:font-bold"}>
             <Link href="/about-us">ABOUT US</Link>
           </li>
           <li
-            className={
-              isActive("/contact-us")
-                ? "active hover:font-bold"
-                : "hover:font-bold"
-            }
+            className={isActive("/contact-us") ? "active" : "hover:font-bold"}
           >
             <Link href="/contact-us">CONTACT US</Link>
           </li>

@@ -17,12 +17,22 @@
 
 /* navlink */
 .active {
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: #1e4f8e;
+  text-decoration-color: #1e4f8e; */
+  /* background-color: #f7eede; */
+  background-color: #4a5c80;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
 }
-
 /********* homepage  ***********/
+
+.Typewriter span {
+  /* background: linear-gradient(to right, from-#4A5C80, to-#002453); */
+  color: #002453;
+}
 .hero {
   background-image: url("/images/homepage.jpg");
   background-repeat: no-repeat;
