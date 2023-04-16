@@ -130,7 +130,7 @@ const Navbar = () => {
 
           <li
             className={`flex items-center gap-x-1 cursor-pointer  group h-full relative
-            ${isActiveForNested ? "active text-color-cus" : "hover:font-bold"}
+            ${isActiveForNested ? "active text-color-cus" : ""}
             
            `}
             // onClick={() => handleToogle()}
