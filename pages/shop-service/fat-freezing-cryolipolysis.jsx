@@ -16,7 +16,11 @@ const fatFreezingCryolipolysis = () => {
       <div className="w-4/5 lg:w-2/3 mx-auto">
         {/* section 1 */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="order-last lg:order-first">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="order-last lg:order-first"
+          >
             <div>
               <h1 className="header-style mb-3">Fat Freeze Cryolipolysis</h1>
               <p className="text-style mb-5">
@@ -34,7 +38,11 @@ const fatFreezingCryolipolysis = () => {
               className="w-full"
             />
           </div>
-          <div className="bg-teal-300 px-10 py-10 order-first lg:order-last mb-5 lg:mb-0">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="bg-teal-300 px-10 py-10 order-first lg:order-last mb-5 lg:mb-0"
+          >
             <h1 className="header-style text-center mb-6">
               Request An Appointment
             </h1>
@@ -76,7 +84,11 @@ const fatFreezingCryolipolysis = () => {
 
         {/* section 2 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="mb-5 lg:mb-0">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-5 lg:mb-0"
+          >
             <h2 className="header-style mb-3">
               What is Elite Fat Freeze Cryolipolysis?
             </h2>
@@ -125,6 +137,8 @@ const fatFreezingCryolipolysis = () => {
             </div> */}
           </div>
           <Image
+            data-aos="fade-left"
+            data-aos-duration="1000"
             src="/images/fat-freezing/fat-freeze-florida.jpg"
             alt="My Image"
             width={500}
@@ -136,13 +150,19 @@ const fatFreezingCryolipolysis = () => {
         {/* section 3 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
           <Image
+            data-aos="fade-right"
+            data-aos-duration="1000"
             src="/images/fat-freezing/fat-freeze-florida-2.jpg"
             alt="My Image"
             width={500}
             height={500}
             className="w-full order-last lg:order-first"
           />
-          <div className="order-first lg:order-last">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="order-first lg:order-last"
+          >
             <h2 className="header-style mb-3">The CoolScultpting Procedure</h2>
             <p className="text-style mb-2">
               Wondering how we, at Elite Spa, help you to reduce stubborn fat
@@ -177,7 +197,11 @@ const fatFreezingCryolipolysis = () => {
 
         {/* section 4 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="mb-5 lg:mb-0">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-5 lg:mb-0"
+          >
             <h2 className="header-style mb-3">
               When will you see the results?
             </h2>
@@ -231,7 +255,7 @@ const fatFreezingCryolipolysis = () => {
               </span>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <Image
               src="/images/fat-freezing/home-banner-3-768x576.jpg"
               alt="My Image"
@@ -243,10 +267,14 @@ const fatFreezingCryolipolysis = () => {
         </div>
 
         {/* why lipo laser  */}
-        <h1 className="mt-20 mb-10 text-4xl font-bold">
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className="mt-20 mb-10 text-4xl font-bold"
+        >
           Why choose Fat Freezing Cryolipolysis at Elite Spa?
         </h1>
-        <p className="text-lg">
+        <p data-aos="fade-down" data-aos-duration="1000" className="text-lg">
           At Elite Spa, we help you to find the perfect means to reduce body
           fat. Fat Freezing Cryolipolysis treatment is known for proven results
           and helps in speeding up the body metabolism. This process offers

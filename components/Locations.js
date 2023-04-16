@@ -2,7 +2,11 @@ import React from "react";
 
 const Locations = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-6">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-6"
+    >
       <div>
         <iframe
           width="100%"

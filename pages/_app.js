@@ -2,6 +2,9 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import ScrollTopButton from "@/components/ScrollTopButton";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -16,6 +19,7 @@ export default function App({ Component, pageProps }) {
           })
         : "Home"
     }`;
+    AOS.init();
   }, [lastRoute]);
   return (
     <div>
@@ -24,6 +28,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
+      <ScrollTopButton />
     </div>
   );
 }

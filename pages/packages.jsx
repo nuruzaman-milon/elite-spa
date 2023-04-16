@@ -14,7 +14,11 @@ const packages = () => {
         desc="Grab our exciting packages and deals"
       />
 
-      <div className="w-4/5 lg:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-8 mx-auto mt-10 border-b-2 pb-10">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="w-4/5 lg:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-8 mx-auto mt-10 border-b-2 pb-10"
+      >
         <div className="h-[28rem] w-full">
           <Image
             src="/images/packages2/special-event-2-nov-2022-628x1024.jpg"
@@ -53,12 +57,20 @@ const packages = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="flex justify-center"
+      >
         <h1 className="mt-10 text-4xl font-bold border-b-4 border-primary-color w-max">
           PACKAGES AND DEALS
         </h1>
       </div>
-      <div className="w-4/5 lg:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 mx-auto mt-10">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="w-4/5 lg:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 mx-auto mt-10"
+      >
         <div className="card-package">
           <Card
             imgAlt="Meaningful alt text for an image that is not purely decorative"

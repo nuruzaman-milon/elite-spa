@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaUserTie } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 
 const index = () => {
@@ -15,7 +14,11 @@ const index = () => {
     <Layout>
       <div>
         {/* hero secton */}
-        <section className="hero w-full h-[60vh] relative">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="hero w-full h-[60vh] relative"
+        >
           <div className="w-2/3 mx-auto">
             <div className="flex flex-col items-left absolute top-1/4 gap-y-8">
               <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -43,12 +46,6 @@ const index = () => {
                   />
                 </h2>
               </div>
-              {/* <h2 className="text-4xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color ml-40">
-                &
-              </h2>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color">
-                WEIGHT LOSS SERVICES
-              </h2> */}
               <Link href="/shop-service">
                 <button className="w-max bg-primary-color text-white rounded-full uppercase py-2 px-4 hover:bg-dark-color transition-colors duration-500 ease-in-out text-color-cus">
                   <FontAwesomeIcon className="mr-1" icon={faAnglesLeft} />
@@ -60,7 +57,11 @@ const index = () => {
         </section>
 
         {/* show services section  */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-2/3 mx-auto mt-10">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-2/3 mx-auto mt-10"
+        >
           <Link href="/">
             <Image
               src="/images/lipo-Laser.jpg"
@@ -127,7 +128,11 @@ const index = () => {
         <h2 className="text-center font-extrabold text-4xl mt-20">
           FEATURED SERVICES
         </h2>
-        <section className="flex gap-x-6 w-2/3 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="flex gap-x-6 w-2/3 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div"
+        >
           <Link
             href="/shop-service/7d-hifu-system"
             className="w-72 flex-shrink-0 shadow-md rounded-xl card"
@@ -326,16 +331,25 @@ const index = () => {
         </div>
 
         {/* carosel */}
-        <div className="h-[500px] xl:h-80 2xl:h-96">
-          <h2 className="text-4xl font-bold text-center mt-10 mb-6">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="xl:h-80 2xl:h-96"
+        >
+          <h2 className="text-4xl font-bold text-center mt-16 mb-6">
             Our Client Say
           </h2>
-          <div className="h-full xl:h-80 2xl:h-96">
-            <Carousel className="h-[500px]">
-              <div className="flex h-full items-center justify-center bg-secondary-color">
-                <div className="w-2/3 mx-auto">
+          <div className="h-[32rem] xl:h-80 2xl:h-96">
+            <Carousel className="rounded-none custom">
+              <div className="flex h-full items-center justify-center bg-secondary-color rounded-none">
+                <div className="w-2/3 mx-auto rounded-none">
                   <div className="flex justify-center mb-6">
-                    <FaUserTie size={60} />
+                    <Image
+                      src="/images/user.png"
+                      alt="My Image"
+                      width={120}
+                      height={120}
+                    />
                   </div>
                   <p className="lg:text-lg">
                     I have received treatment here a few times, and I am
@@ -343,9 +357,7 @@ const index = () => {
                     members are very kind people who take the time to explain
                     everything to you and assist you in choosing the treatments
                     that best match the results you want. I feel safe and
-                    well-cared for in this tidy, tranquil office. Elite Spa has
-                    my highest recommendation. To be completely honest, going
-                    there is such a treat for me. I am grateful.
+                    well-cared for in this tidy, tranquil office.
                   </p>
                   <p className="text-2xl font-bold text-center mt-6">
                     Safa Qassm
@@ -353,9 +365,14 @@ const index = () => {
                 </div>
               </div>
               <div className="flex h-full items-center justify-center bg-secondary-color">
-                <div className="w-2/3 mx-auto">
+                <div className="w-2/3 mx-auto pb-5">
                   <div className="flex justify-center mb-6">
-                    <FaUserTie size={60} />
+                    <Image
+                      src="/images/user1.png"
+                      alt="My Image"
+                      width={120}
+                      height={120}
+                    />
                   </div>
                   <p className="lg:text-lg">
                     This was my first time visiting this sp and first time with
@@ -364,8 +381,7 @@ const index = () => {
                     Lana suggested I also watched my diet, worked out mildly and
                     increased my water intake). I ended up coming back to do it
                     again, hoping to see even better results with the new
-                    machine she got and with more effort on my part! Very happy
-                    with my visit and recommend!Ashley Snyder
+                    machine she got and with more effort on my part!
                   </p>
                   <p className="text-2xl font-bold text-center mt-6">
                     Ashley Snyder
@@ -373,9 +389,14 @@ const index = () => {
                 </div>
               </div>
               <div className="flex h-full items-center justify-center bg-secondary-color">
-                <div className="w-2/3 mx-auto">
+                <div className="w-2/3 mx-auto pb-5">
                   <div className="flex justify-center mb-6">
-                    <FaUserTie size={60} />
+                    <Image
+                      src="/images/user2.png"
+                      alt="My Image"
+                      width={120}
+                      height={120}
+                    />
                   </div>
                   <p className="lg:text-lg">
                     Always a great experience here. Lana is amazing and super

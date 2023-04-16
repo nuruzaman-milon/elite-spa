@@ -126,9 +126,12 @@ select:focus option {
 .snap-mandatory {
   color: #002453;
   background: #000;
+  border-radius: 0%;
 }
 .bottom-5 button {
-  /* color: #002453; */
+  background: #002453;
+}
+.bottom-5 button:hover {
   background: #002453;
 }
 
@@ -139,4 +142,9 @@ select:focus option {
 }
 .card-package div img {
   height: 17rem !important;
+}
+
+/* review carosel */
+.custom .group {
+  display: none;
 }

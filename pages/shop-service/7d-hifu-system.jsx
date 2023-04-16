@@ -16,7 +16,11 @@ const Hifu7d = () => {
       <div className="w-4/5 lg:w-2/3 mx-auto">
         {/* section 1 */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="order-last lg:order-first">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="order-last lg:order-first"
+          >
             <div>
               <h1 className="text-4xl font-bold mb-3">7D HIFU System</h1>
               <h2 className="text-3xl font-bold mb-3">
@@ -40,7 +44,11 @@ const Hifu7d = () => {
               className="w-full"
             />
           </div>
-          <div className="bg-teal-300 px-10 py-10 order-first lg:order-last mb-5 lg:mb-0">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="bg-teal-300 px-10 py-10 order-first lg:order-last mb-5 lg:mb-0"
+          >
             <h1 className="header-style text-center mb-6">
               Request An Appointment
             </h1>
@@ -82,7 +90,11 @@ const Hifu7d = () => {
 
         {/* section 2 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="mb-5 lg:mb-0">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-5 lg:mb-0"
+          >
             <h2 className="header-style mb-3">
               7D HIFU for Facelift Wrinkle Removal
             </h2>
@@ -108,38 +120,10 @@ const Hifu7d = () => {
               People in their 30s or 40s have reportedly seen very good results
               after a session.
             </p>
-            {/* <div className="flex gap-x-6 gap-y-3 flex-wrap">
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Upper Arms
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Stomach
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Upper thighs
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Back thighs
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">Chin</span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Lower and upper abdomen
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Outer or front thighs
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Love Handles
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Bra Line
-              </span>
-              <span className="border px-1 bg-slate-200 rounded-md">
-                Chest area for Men
-              </span>
-            </div> */}
           </div>
           <Image
+            data-aos="fade-left"
+            data-aos-duration="1000"
             src="/images/7dhifu/hifu-body-4-768x520.jpg"
             alt="My Image"
             width={500}
@@ -150,7 +134,7 @@ const Hifu7d = () => {
 
         {/* section 3 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <Image
               src="/images/7dhifu/hifu-body-2-768x931.jpg"
               alt="My Image"
@@ -166,7 +150,11 @@ const Hifu7d = () => {
               className="w-full lg:h-96 order-last lg:order-first"
             />
           </div>
-          <div className="order-first lg:order-last">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="order-first lg:order-last"
+          >
             <h2 className="header-style mb-3">What to expect?</h2>
             <p className="text-style mb-2">
               When you go for a HIFU wrinkle removal treatment, you should first
@@ -209,7 +197,11 @@ const Hifu7d = () => {
 
         {/* section 4 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="mb-5 lg:mb-0">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-5 lg:mb-0"
+          >
             <h2 className="header-style mb-3">
               How much does the treatment cost?
             </h2>
@@ -226,6 +218,8 @@ const Hifu7d = () => {
           </div>
           <div>
             <Image
+              data-aos="fade-left"
+              data-aos-duration="1000"
               src="/images/7dhifu/hifu-body1.jpg"
               alt="My Image"
               width={500}
@@ -236,7 +230,7 @@ const Hifu7d = () => {
         </div>
 
         {/* why lipo laser  */}
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h1 className="mt-20 mb-6 text-4xl font-bold">
             Is the procedure right for you?
           </h1>
@@ -252,7 +246,7 @@ const Hifu7d = () => {
             will not be safe for people having skin infections or open wounds.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h1 className="mt-20 mb-6 text-4xl font-bold">
             Are there any side effects?
           </h1>

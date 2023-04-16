@@ -3,7 +3,11 @@ import ButtonWithAngle from "./ButtonWithAngle";
 
 const ServiceTopBar = ({ title, desc }) => {
   return (
-    <div className="lipo-laser-bg-img relative h-96">
+    <div
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      className="lipo-laser-bg-img relative h-96"
+    >
       <div className="w-4/5 lg:w-2/3 mx-auto">
         <div className="flex flex-col gap-y-3 absolute justify-center h-full max-w-full xl:w-1/3">
           <h1 className="text-4xl font-bold">{title}</h1>

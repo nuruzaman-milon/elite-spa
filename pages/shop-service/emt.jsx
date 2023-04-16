@@ -16,7 +16,11 @@ const emt = () => {
       <div className="w-4/5 lg:w-2/3 mx-auto">
         {/* section 1 */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="order-last lg:order-first">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="order-last lg:order-first"
+          >
             <div>
               <h1 className="header-style mb-3">EMS Slimming Machine</h1>
               <p className="text-style mb-5">
@@ -38,7 +42,11 @@ const emt = () => {
               className="w-full"
             />
           </div>
-          <div className="bg-teal-300 px-10 py-10 order-first lg:order-last mb-5 lg:mb-0">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="bg-teal-300 px-10 py-10 order-first lg:order-last mb-5 lg:mb-0"
+          >
             <h1 className="header-style text-center mb-6">
               Request An Appointment
             </h1>
@@ -80,7 +88,11 @@ const emt = () => {
 
         {/* section 2 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="mb-5 lg:mb-0">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-5 lg:mb-0"
+          >
             <h2 className="header-style mb-3">How does it work?</h2>
             <p className="text-style mb-4">
               The procedure uses electromagnetic energy to cause the muscles to
@@ -106,6 +118,8 @@ const emt = () => {
             </p>
           </div>
           <Image
+            data-aos="fade-left"
+            data-aos-duration="1000"
             src="/images/emt2_598x531.jpeg"
             alt="My Image"
             width={500}
@@ -117,13 +131,19 @@ const emt = () => {
         {/* section 3 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
           <Image
+            data-aos="fade-right"
+            data-aos-duration="1000"
             src="/images/emt2_598x531.jpeg"
             alt="My Image"
             width={500}
             height={500}
             className="w-full order-last lg:order-first"
           />
-          <div className="order-first lg:order-last">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="order-first lg:order-last"
+          >
             <h2 className="header-style mb-3">
               How long does the procedure take?
             </h2>
@@ -144,7 +164,11 @@ const emt = () => {
 
         {/* section 4 */}
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-x-20 items-center border-b border-gray-200 pb-14">
-          <div className="mb-5 lg:mb-0">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-5 lg:mb-0"
+          >
             <h2 className="header-style mb-3">
               How long will the results last?
             </h2>
@@ -176,6 +200,8 @@ const emt = () => {
           </div>
           <div>
             <Image
+              data-aos="fade-left"
+              data-aos-duration="1000"
               src="/images/emt2_598x531.jpeg"
               alt="My Image"
               width={500}
@@ -186,7 +212,7 @@ const emt = () => {
         </div>
 
         {/* why lipo laser  */}
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h1 className="mt-10 mb-4 text-4xl font-bold">
             Are there any side effects to the procedure?
           </h1>
@@ -199,7 +225,7 @@ const emt = () => {
             does not feel too sore.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h1 className="mt-10 mb-4 text-4xl font-bold">
             How much does the treatment cost?
           </h1>

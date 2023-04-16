@@ -37,8 +37,8 @@ const Navbar = () => {
               <Image
                 src="/images/logo.png"
                 alt="My Image"
-                width={500}
-                height={500}
+                width={320}
+                height={96}
                 className="h-full w-full"
               />
             </Link>
@@ -115,49 +115,65 @@ const Navbar = () => {
             <Image
               src="/images/logo.png"
               alt="My Image"
-              width={500}
-              height={500}
-              className="h-full w-full"
+              width={320}
+              height={96}
+              className="w-auto h-14"
             />
           </Link>
         </h1>
-        <ul className="hidden lg:flex items-center gap-x-6">
+        <ul className="hidden lg:flex items-center gap-x-6 ">
           <li className={isActive("/") ? "active" : "hover:font-bold"}>
             <Link href="/">HOME</Link>
           </li>
+
+          {/*  */}
+
           <li
-            className={`flex items-center gap-x-1 cursor-pointer
+            className={`flex items-center gap-x-1 cursor-pointer  group h-full relative
             ${isActiveForNested ? "active text-color-cus" : "hover:font-bold"}
             
            `}
-            onClick={() => handleToogle()}
+            // onClick={() => handleToogle()}
+            // onMouseEnter={() => handleToogle(true)}
           >
             SERVICES
-            {toogle === false && <FontAwesomeIcon icon={faAngleDown} />}
-            {toogle && <FontAwesomeIcon icon={faAngleUp} />}
+            <div className="pt-[2rem]  hidden  absolute left-0 top-5 group-hover:block   z-10">
+              <ul className="border-2  w-56 z-50 origin-top   shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+                <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
+                  <Link href="/shop-service">All Services</Link>
+                </li>
+                <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
+                  <Link href="/shop-service/lipo-laser">Lipo Laser</Link>
+                </li>
+                <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
+                  <Link href="/shop-service/fat-freezing-cryolipolysis">
+                    Fat Freezing Cryolipolysis
+                  </Link>
+                </li>
+                <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
+                  <Link href="/shop-service/emt">EMS Slimming Machine</Link>
+                </li>
+                <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
+                  <Link href="/shop-service/7d-hifu-system">
+                    7d-hifu-system
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            {/* {toogle === false && <FontAwesomeIcon icon={faAngleDown} />}
+              {toogle && <FontAwesomeIcon icon={faAngleUp} />} */}
+            <FontAwesomeIcon
+              className=" group-hover:hidden"
+              icon={faAngleDown}
+            />
+            <FontAwesomeIcon
+              className="hidden group-hover:block"
+              icon={faAngleUp}
+            />
           </li>
           {/* dropdown menu for services  */}
-          {toogle && (
-            <div className="w-56 z-50 origin-top absolute top-20 shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
-              <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
-                <Link href="/shop-service">All Services</Link>
-              </li>
-              <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
-                <Link href="/shop-service/lipo-laser">Lipo Laser</Link>
-              </li>
-              <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
-                <Link href="/shop-service/fat-freezing-cryolipolysis">
-                  Fat Freezing Cryolipolysis
-                </Link>
-              </li>
-              <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
-                <Link href="/shop-service/emt">EMS Slimming Machine</Link>
-              </li>
-              <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
-                <Link href="/shop-service/7d-hifu-system">7d-hifu-system</Link>
-              </li>
-            </div>
-          )}
+
+          {/*  */}
           <li className={isActive("/packages") ? "active" : "hover:font-bold"}>
             <Link href="/packages">PACKAGES</Link>
           </li>

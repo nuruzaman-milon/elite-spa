@@ -16,13 +16,15 @@ const aboutUs = () => {
         <div className="w-2/3 mx-auto">
           <div className="flex gap-x-10 my-20">
             <Image
+              data-aos="fade-right"
+              data-aos-duration="1000"
               src="/images/aboutus.jpg"
               alt="About Us Image"
               width={500}
               height={500}
               className="h-100% w-100%"
             />
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1000">
               <h2 className="text-3xl font-bold mb-6">
                 Body Aesthetics That Are Envy Worthy
               </h2>
@@ -41,7 +43,11 @@ const aboutUs = () => {
             </div>
           </div>
 
-          <div className="text-lg flex flex-col gap-y-6">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="text-lg flex flex-col gap-y-6"
+          >
             <h1 className="text-2xl font-bold">
               Indulge in a Heavenly Massage That Leaves Your Mind, Body, and
               Soul Completely Refreshed
@@ -148,7 +154,11 @@ const aboutUs = () => {
           <ParallaxComponent />
         </div>
         <div className="w-2/3 mx-auto">
-          <div className="text-lg flex flex-col gap-y-6">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="text-lg flex flex-col gap-y-6"
+          >
             <div>
               <h2 className="text-2xl font-bold mb-2 border-b-4 border-primary-color w-max pb-1">
                 Lipo-Laser

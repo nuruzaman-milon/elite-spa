@@ -55,7 +55,11 @@ const ContactUs = () => {
         />
         <div className="w-2/3 mx-auto">
           <div className="lg:flex items-center">
-            <div className="lg:w-1/3 flex flex-col gap-y-4 items-center lg:items-start">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="lg:w-1/3 flex flex-col gap-y-4 items-center lg:items-start"
+            >
               <h2 className="text-4xl font-bold lg:w-max text-center lg:text-start mt-4 lg:mt-0 border-b-4 border-primary-color pb-1">
                 Business Hours
               </h2>
@@ -67,7 +71,11 @@ const ContactUs = () => {
               <p className="text-2xl font-semibold">Saturday: 10am – 5pm</p>
               <p className="text-2xl font-semibold">Sunday: Off</p>
             </div>
-            <div className="lg:w-2/3 flex flex-col items-center">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              className="lg:w-2/3 flex flex-col items-center"
+            >
               <div className="text-center ">
                 <h2 className="text-3xl font-bold mt-10 mb-4">
                   HAVE SOME QUESTIONS?
@@ -173,12 +181,20 @@ const ContactUs = () => {
               </form>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="flex justify-center"
+          >
             <h2 className="text-4xl font-bold mt-10 mb-8 text-center border-b-4 border-primary-color pb-1 w-max">
               Our Locations
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4"
+          >
             <div className="flex flex-col gap-y-2 shadow-lg rounded-lg text-center p-2">
               <h2 className="text-xl font-bold">St. Petersburg</h2>
               <p>9609 Bay Pines Blvd, St. Petersburg, FL 33708</p>

@@ -1,81 +1,94 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="py-10 bg-primary-color mt-10">
-      {/* <div className="flex flex-col items-center justify-center h-full gap-y-4">
-        <div className="flex gap-x-4">
-          <Link href="/">
-            <Image
-              src="/images/facebook.png"
-              alt="My Image"
-              width={30}
-              height={30}
-              className="h-100% w-100%"
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              src="/images/youtube.png"
-              alt="My Image"
-              width={30}
-              height={30}
-              className="h-100% w-100%"
-            />
-          </Link>
-        </div>
-        <div className="text-white">
-          © Copyright 2022 ELITE SPA. All Rights Reserved
-        </div>
-        <div className="text-white">
-          Design & Development by{" "}
-          <Link
-            className="border-b"
-            href="https://bayshorecommunication.com/"
-            target="_blank"
-          >
-            Bayshore Communication
-          </Link>
-        </div>
-      </div> */}
-
-      <footer className="text-white">
+      <footer>
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-white">
-          <div className="sm:flex sm:items-center sm:justify-between">
+          <div className="sm:flex sm:items-start sm:justify-between pt-4">
             <Link href="/" className="flex items-center mb-4 sm:mb-0">
-              {/* <Image
-                src="/images/logo.png"
+              <Image
+                src="/images/footer-logo.png"
                 alt="My Image"
-                width={500}
-                height={500}
-                className="h-full w-full"
-              /> */}
-              <h2 className="text-3xl font bold text-white">Elite Spa</h2>
+                width={300}
+                height={100}
+                className=""
+              />
+              {/* <h2 className="text-3xl font bold text-white">Elite Spa</h2> */}
             </Link>
-            <div className="text-color-cus flex gap-x-4 mb-3 lg:mb-0 lg:ml-36">
-              <Link
-                href="https://www.facebook.com/EliteSpaFlorida/"
-                target="_blank"
-              >
-                <FaFacebook size={32} color="white" />
-              </Link>
-              <Link href="https://www.youtube.com/" target="_blank">
-                <FaYoutube size={32} color="white" />
-              </Link>
-              <Link
-                href="https://www.instagram.com/Elite_spa7/"
-                target="_blank"
-              >
-                <FaInstagram size={32} color="white" />
-              </Link>
+
+            {/* service 1 */}
+            <div>
+              <ul className="flex flex-col gap-y-2">
+                <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
+                  <Link href="/shop-service">All Services</Link>
+                </li>
+
+                <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
+                  <Link href="/shop-service/lipo-laser">Lipo Laser</Link>
+                </li>
+
+                <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
+                  <Link href="/shop-service/fat-freezing-cryolipolysis">
+                    Fat Freezing Cryolipolysis
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0">
+
+            {/* service 2 */}
+            <div>
+              <ul className="flex flex-col gap-y-2">
+                <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
+                  <Link href="/shop-service/emt">EMS Slimming Machine</Link>
+                </li>
+
+                <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
+                  <Link href="/shop-service/emt">Pressotherapy Treatment</Link>
+                </li>
+
+                <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
+                  <Link href="/shop-service/emt">Ultrasonic Cavitation</Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* service 3 */}
+            <ul className="flex flex-col gap-y-2">
               <li>
                 <Link
                   href="/shop-service"
-                  className="mr-4 hover:underline md:mr-6 text-white"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
+                >
+                  Pressotherapy Treatment
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/shop-service"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
+                >
+                  Ultrasonic Cavitation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/shop-service"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
+                >
+                  liposonix Non Sergical
+                </Link>
+              </li>
+            </ul>
+
+            {/* Nav links */}
+            <ul className="flex flex-col gap-y-2">
+              <li>
+                <Link
+                  href="/shop-service"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
                 >
                   Services
                 </Link>
@@ -83,7 +96,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/packages"
-                  className="mr-4 hover:underline md:mr-6 text-white"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
                 >
                   Packages
                 </Link>
@@ -91,34 +104,64 @@ const Footer = () => {
               <li>
                 <Link
                   href="/about-us"
-                  className="mr-4 hover:underline md:mr-6 text-white"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
                 >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact-us" className="hover:underline text-white">
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:underline underline-offset-2 text-sm font-normal"
+                >
                   Contact Us
                 </Link>
               </li>
             </ul>
           </div>
-          <hr className="my-6  sm:mx-auto lg:my-8" />
-          <span className="block text-sm text-white sm:text-center">
-            <div className="text-white mb-1">
-              © Copyright 2023 ELITE SPA. All Rights Reserved
-            </div>
-            <div className="text-white">
-              Design & Development by{" "}
+          <hr className="my-6 sm:mx-auto lg:my-14" />
+          <div>
+            <div className="text-color-cus flex justify-center gap-x-4 mb-3 lg:mb-0">
               <Link
-                className="border-b"
-                href="https://bayshorecommunication.com/"
+                href="https://www.facebook.com/EliteSpaFlorida/"
                 target="_blank"
+                className="border p-2 rounded-full"
               >
-                Bayshore Communication
+                <FaFacebookF size={24} color="red" />
+              </Link>
+              <Link
+                href="https://www.youtube.com/"
+                target="_blank"
+                className="border p-2 rounded-full"
+              >
+                <FaYoutube size={24} color="white" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/Elite_spa7/"
+                target="_blank"
+                className="border p-2 rounded-full"
+              >
+                <FaInstagram size={24} color="white" />
               </Link>
             </div>
-          </span>
+            <div className="mt-6">
+              <span className="block text-sm text-white sm:text-center">
+                <div className="text-white mb-1">
+                  © Copyright 2023 ELITE SPA. All Rights Reserved
+                </div>
+                <div className="text-white">
+                  Design & Development by
+                  <Link
+                    className="border-b ml-1"
+                    href="https://bayshorecommunication.com/"
+                    target="_blank"
+                  >
+                    Bayshore Communication
+                  </Link>
+                </div>
+              </span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
@@ -126,3 +169,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* */
+}
