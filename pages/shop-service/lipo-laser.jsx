@@ -13,7 +13,7 @@ const lipoLaser = () => {
           desc="The Lipo Laser treatment is gaining worldwide popularity owing to its fast and effective fat reduction results."
         />
       </div>
-      <div className="w-4/5 lg:w-2/3 mx-auto">
+      <div className="container">
         {/* section 1 */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-20 items-center border-b border-gray-200 pb-14">
           <div

@@ -53,7 +53,7 @@ const ContactUs = () => {
           title="Contact Us"
           desc="Feel free to connect with us for any kind of service. We will be proud if we can connect with you."
         />
-        <div className="w-2/3 mx-auto">
+        <div className="container">
           <div className="lg:flex items-center">
             <div
               data-aos="fade-right"

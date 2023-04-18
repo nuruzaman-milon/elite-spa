@@ -8,7 +8,7 @@ const ServiceTopBar = ({ title, desc }) => {
       data-aos-duration="1000"
       className="lipo-laser-bg-img relative h-96"
     >
-      <div className="w-4/5 lg:w-2/3 mx-auto">
+      <div className="container">
         <div className="flex flex-col gap-y-3 absolute justify-center h-full max-w-full xl:w-1/3">
           <h1 className="text-4xl font-bold">{title}</h1>
           <h3 className="text-lg font-semibold">{desc}</h3>

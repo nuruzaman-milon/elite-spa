@@ -13,7 +13,7 @@ const aboutUs = () => {
           title="About Us"
           desc="This is our brief infomation. Always feel free to know about us and connect with us."
         />
-        <div className="w-2/3 mx-auto">
+        <div className="container">
           <div className="flex gap-x-10 my-20">
             <Image
               data-aos="fade-right"
@@ -153,7 +153,7 @@ const aboutUs = () => {
         <div className="my-10">
           <ParallaxComponent />
         </div>
-        <div className="w-2/3 mx-auto">
+        <div className="container">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"

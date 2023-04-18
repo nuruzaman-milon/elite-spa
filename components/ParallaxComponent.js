@@ -9,7 +9,7 @@ function ParallaxComponent() {
       bgImageStyle={{ opacity: ".8" }}
       //   className="filter brightness-75"
     >
-      <div style={{ height: "450px" }} className="w-2/3 mx-auto">
+      <div style={{ height: "450px" }} className="container">
         <div className="w-1/3 flex flex-col justify-center h-full gap-y-4">
           <h2 className="text-3xl font-bold">
             Dive into our Body Slimming and Shaping Treatments

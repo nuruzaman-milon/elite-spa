@@ -11,7 +11,7 @@ const index = () => {
         title="Shop Service"
         desc="Our treatments are gaining worldwide popularity owing to its fast and effective results."
       />
-      <div className="w-4/5 lg:w-2/3 mx-auto mt-10">
+      <div className="container mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col gap-y-2">
             <h1 className="text-2xl font-bold">Fat Freeze Cryolipolysis</h1>

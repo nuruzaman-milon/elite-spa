@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* tailwind component class  */
+.container {
+  @apply w-4/5 lg:w-2/3 mx-auto;
+}
 .text-style {
   @apply text-lg font-medium;
 }
@@ -17,10 +20,6 @@
 
 /* navlink */
 .active {
-  /* text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: #1e4f8e; */
-  /* background-color: #f7eede; */
   background-color: #4a5c80;
   padding: 2px 8px;
   border-radius: 5px;

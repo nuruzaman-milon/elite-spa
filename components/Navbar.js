@@ -30,19 +30,16 @@ const Navbar = () => {
   return (
     <div>
       <div className="text-basic-color bg-secondary-color h-20 z-50 flex lg:hidden items-center justify-center gap-x-52 text-primary-color relative border-b lg:border-none">
-        <div className="flex items-center justify-around w-full lg:w-auto">
+        <div className="flex items-center justify-around w-full lg:w-auto h-full">
           {/* show on all devices */}
-          <h1 className="flex lg:hidden text-3xl font-extrabold text-dark-color">
-            <Link href="/">
-              <Image
-                src="/images/logo.png"
-                alt="My Image"
-                width={320}
-                height={96}
-                className="h-full w-full"
-              />
-            </Link>
-          </h1>
+          <Link className="lg:hidden" href="/">
+            <Image
+              src="/images/footer-logo.png"
+              alt="logo"
+              width={122}
+              height={56}
+            />
+          </Link>
 
           {/* show on mobile & tab*/}
           <button
@@ -108,19 +105,18 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div className="w-2/3 mx-auto flex justify-between items-center h-20 z-50">
+      <div className="hidden container lg:flex justify-between items-center h-20 z-50">
         {/* show on laptop & desktop */}
-        <h1 className="hidden lg:flex text-3xl font-extrabold text-dark-color">
-          <Link href="/">
-            <Image
-              src="/images/logo.png"
-              alt="My Image"
-              width={320}
-              height={96}
-              className="w-auto h-14"
-            />
-          </Link>
-        </h1>
+
+        <Link className="hidden lg:block" href="/">
+          <Image
+            src="/images/footer-logo.png"
+            alt="logo"
+            width={122}
+            height={56}
+          />
+        </Link>
+
         <ul className="hidden lg:flex items-center gap-x-6 ">
           <li className={isActive("/") ? "active" : "hover:font-bold"}>
             <Link href="/">HOME</Link>

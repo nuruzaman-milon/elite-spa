@@ -6,14 +6,17 @@ const Footer = () => {
   return (
     <div className="py-10 bg-primary-color mt-10">
       <footer>
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-white">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-white text-center lg:text-left">
           <div className="sm:flex sm:items-start sm:justify-between pt-4">
-            <Link href="/" className="flex items-center mb-4 sm:mb-0">
+            <Link
+              href="/"
+              className="flex items-center justify-center lg:justify-start mb-4 sm:mb-0"
+            >
               <Image
                 src="/images/footer-logo.png"
                 alt="My Image"
-                width={300}
-                height={100}
+                width={122}
+                height={56}
                 className=""
               />
               {/* <h2 className="text-3xl font bold text-white">Elite Spa</h2> */}
@@ -21,7 +24,7 @@ const Footer = () => {
 
             {/* service 1 */}
             <div>
-              <ul className="flex flex-col gap-y-2">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
                 <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
                   <Link href="/shop-service">All Services</Link>
                 </li>
@@ -37,10 +40,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
+            <hr className="lg:hidden my-5 border-gray-500" />
             {/* service 2 */}
             <div>
-              <ul className="flex flex-col gap-y-2">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
                 <li className="text-white hover:underline underline-offset-2 text-sm font-normal">
                   <Link href="/shop-service/emt">EMS Slimming Machine</Link>
                 </li>
@@ -55,8 +58,10 @@ const Footer = () => {
               </ul>
             </div>
 
+            <hr className="lg:hidden my-5 border-gray-500" />
+
             {/* service 3 */}
-            <ul className="flex flex-col gap-y-2">
+            <ul className="flex flex-col gap-y-1 lg:gap-y-2">
               <li>
                 <Link
                   href="/shop-service"
@@ -83,8 +88,10 @@ const Footer = () => {
               </li>
             </ul>
 
+            <hr className="lg:hidden my-5 border-gray-500" />
+
             {/* Nav links */}
-            <ul className="flex flex-col gap-y-2">
+            <ul className="flex flex-col gap-y-1 lg:gap-y-2">
               <li>
                 <Link
                   href="/shop-service"
@@ -119,7 +126,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <hr className="my-6 sm:mx-auto lg:my-14" />
+          <hr className="my-6 sm:mx-auto lg:my-14 border-gray-500" />
           <div>
             <div className="text-color-cus flex justify-center gap-x-4 mb-3 lg:mb-0">
               <Link
@@ -152,11 +159,13 @@ const Footer = () => {
                 <div className="text-white">
                   Design & Development by
                   <Link
-                    className="border-b ml-1"
+                    className=" ml-1"
                     href="https://bayshorecommunication.com/"
                     target="_blank"
                   >
-                    Bayshore Communication
+                    <span className="block lg:inline text-white underline underline-offset-2 mt-1 lg:mt-0">
+                      Bayshore Communication
+                    </span>
                   </Link>
                 </div>
               </span>

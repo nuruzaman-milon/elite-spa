@@ -19,17 +19,17 @@ const index = () => {
           data-aos-duration="800"
           className="hero w-full h-[60vh] relative"
         >
-          <div className="w-2/3 mx-auto">
+          <div className="container">
             <div className="flex flex-col items-left absolute top-1/4 gap-y-8">
-              <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <h1 className="text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                 Elite Spa
               </h1>
 
               <div className="lg:flex gap-x-3">
-                <h2 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-dark-color">
+                <h2 className="text-4xl lg:text-6xl font-extrabold text-dark-color">
                   We Offer -
                 </h2>
-                <h2 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text">
+                <h2 className="text-4xl lg:text-6xl font-extrabold ">
                   <Typewriter
                     options={{
                       strings: [
@@ -60,7 +60,7 @@ const index = () => {
         <section
           data-aos="fade-up"
           data-aos-duration="1500"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 w-2/3 mx-auto mt-10"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 container mt-10"
         >
           <Link href="/">
             <Image
@@ -125,13 +125,13 @@ const index = () => {
         </section>
 
         {/* all treatements */}
-        <h2 className="text-center font-extrabold text-4xl mt-20">
+        <h2 className="container text-center font-extrabold text-4xl mt-20">
           FEATURED SERVICES
         </h2>
         <section
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="flex gap-x-6 w-2/3 mx-auto mt-12 overflow-x-scroll pb-6 scrollable-div"
+          className="flex gap-x-6 container mt-12 overflow-x-scroll pb-6 scrollable-div"
         >
           <Link
             href="/shop-service/7d-hifu-system"
@@ -318,7 +318,7 @@ const index = () => {
 
         {/* email send */}
         <div className="flex flex-col gap-y-4 items-center">
-          <h2 className="text-center font-extrabold text-3xl mt-20">
+          <h2 className="container text-center font-extrabold text-3xl mt-20">
             Stay up-to-date on events and offers
           </h2>
           <input
@@ -334,15 +334,15 @@ const index = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="xl:h-80 2xl:h-96"
+          className="h-[34rem] xl:h-96"
         >
           <h2 className="text-4xl font-bold text-center mt-16 mb-6">
             Our Client Say
           </h2>
-          <div className="h-[32rem] xl:h-80 2xl:h-96">
+          <div className="h-[34rem] xl:h-96">
             <Carousel className="rounded-none custom">
               <div className="flex h-full items-center justify-center bg-secondary-color rounded-none">
-                <div className="w-2/3 mx-auto rounded-none">
+                <div className="container rounded-none">
                   <div className="flex justify-center mb-6">
                     <Image
                       src="/images/user.png"
@@ -365,7 +365,7 @@ const index = () => {
                 </div>
               </div>
               <div className="flex h-full items-center justify-center bg-secondary-color">
-                <div className="w-2/3 mx-auto pb-5">
+                <div className="container pb-5">
                   <div className="flex justify-center mb-6">
                     <Image
                       src="/images/user1.png"
@@ -380,8 +380,7 @@ const index = () => {
                     very honest. I seen good results with the fat freezing (as
                     Lana suggested I also watched my diet, worked out mildly and
                     increased my water intake). I ended up coming back to do it
-                    again, hoping to see even better results with the new
-                    machine she got and with more effort on my part!
+                    again, hoping to see even better results.
                   </p>
                   <p className="text-2xl font-bold text-center mt-6">
                     Ashley Snyder
@@ -389,7 +388,7 @@ const index = () => {
                 </div>
               </div>
               <div className="flex h-full items-center justify-center bg-secondary-color">
-                <div className="w-2/3 mx-auto pb-5">
+                <div className="container pb-5">
                   <div className="flex justify-center mb-6">
                     <Image
                       src="/images/user2.png"
