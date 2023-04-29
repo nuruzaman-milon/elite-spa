@@ -1,12 +1,16 @@
 import Button from "@/components/Button";
 import Layout from "@/components/Layout";
 import ServiceTopBar from "@/components/ServiceTopBar";
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
 const index = () => {
   return (
     <Layout>
+      <Head>
+        <title>Services - Elite Spa</title>
+      </Head>
       <ServiceTopBar
         title="Shop Service"
         desc="Our treatments are gaining worldwide popularity owing to its fast and effective results."
@@ -38,13 +42,24 @@ const index = () => {
             </Link>
           </div>
           <div className="flex flex-col gap-y-2">
-            <h1 className="text-2xl font-bold">4D HIFU System</h1>
+            <h1 className="text-2xl font-bold">7D HIFU System</h1>
             <p className="text-lg">
               As soon as we cross into our 30s, we experience sagging skin and
               wrinkles. Wrinkles are the signs of aging. A majority of the women
               spend their time and money on anti-aging creams and more invasive…
             </p>
             <Link href="/shop-service/7d-hifu-system">
+              <Button name="Learn More" />
+            </Link>
+          </div>
+          <div className="flex flex-col gap-y-2">
+            <h1 className="text-2xl font-bold">EMS Slimming Machine</h1>
+            <p className="text-lg">
+              The procedure is no less than a revolution for the cosmetic
+              surgery industry. It is hailed as a non-invasive and non-surgical
+              treatment that helps build muscles and burn body fat without any…
+            </p>
+            <Link href="/shop-service/emt">
               <Button name="Learn More" />
             </Link>
           </div>
@@ -57,7 +72,7 @@ const index = () => {
               skin. Specialized in Radio Frequency Skin Tightening, our
               treatments help you to increase the production of collagen…
             </p>
-            <Link href="/shop-service/fat-freezing-cryolipolysis">
+            <Link href="">
               <Button name="Learn More" />
             </Link>
           </div>
@@ -69,7 +84,7 @@ const index = () => {
               discomfort while eliminating excess fat from your body. Gone are
               the days of painful surgeries…
             </p>
-            <Link href="/shop-service/fat-freezing-cryolipolysis">
+            <Link href="">
               <Button name="Learn More" />
             </Link>
           </div>
@@ -81,7 +96,7 @@ const index = () => {
               lawn. The needle punctures are so small that, unaided, no one can
               soon…
             </p>
-            <Link href="/shop-service/fat-freezing-cryolipolysis">
+            <Link href="">
               <Button name="Learn More" />
             </Link>
           </div>
@@ -92,7 +107,7 @@ const index = () => {
               make you bothered about how you look, how your appearance has been
               changed since after you have started losing your hair...
             </p>
-            <Link href="/shop-service/fat-freezing-cryolipolysis">
+            <Link href="">
               <Button name="Learn More" />
             </Link>
           </div>

@@ -8,10 +8,16 @@ import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
+import Head from "next/head";
 
 const index = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          Elite Spa - Body Sculpting and Weight Loss Services Florida
+        </title>
+      </Head>
       <div>
         {/* hero secton */}
         <section

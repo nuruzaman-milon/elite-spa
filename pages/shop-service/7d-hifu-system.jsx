@@ -2,11 +2,15 @@ import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
 import Locations from "@/components/Locations";
 import ServiceTopBar from "@/components/ServiceTopBar";
+import Head from "next/head";
 import Image from "next/image";
 
 const Hifu7d = () => {
   return (
     <Layout>
+      <Head>
+        <title>7D HIFU System - Elite Spa</title>
+      </Head>
       <div>
         <ServiceTopBar
           title="7D HIFU System"

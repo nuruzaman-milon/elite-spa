@@ -2,12 +2,16 @@ import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
 import ParallaxComponent from "@/components/ParallaxComponent";
 import ServiceTopBar from "@/components/ServiceTopBar";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
 const aboutUs = () => {
   return (
     <Layout>
+      <Head>
+        <title>About Us - Elite Spa</title>
+      </Head>
       <div>
         <ServiceTopBar
           title="About Us"

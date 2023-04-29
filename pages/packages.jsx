@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import Layout from "@/components/Layout";
 import ServiceTopBar from "@/components/ServiceTopBar";
 import { Card } from "flowbite-react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,6 +10,9 @@ import React from "react";
 const packages = () => {
   return (
     <Layout>
+      <Head>
+        <title>Packages - Elite Spa</title>
+      </Head>
       <ServiceTopBar
         title="Packages"
         desc="Grab our exciting packages and deals"

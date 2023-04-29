@@ -2,11 +2,15 @@ import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
 import Locations from "@/components/Locations";
 import ServiceTopBar from "@/components/ServiceTopBar";
+import Head from "next/head";
 import Image from "next/image";
 
 const fatFreezingCryolipolysis = () => {
   return (
     <Layout>
+      <Head>
+        <title>Fat Freezing - Elite Spa</title>
+      </Head>
       <div>
         <ServiceTopBar
           title="Fat Freezing Cryolipolysis"
