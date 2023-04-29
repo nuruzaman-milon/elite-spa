@@ -68,7 +68,7 @@ const index = () => {
           data-aos-duration="1500"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 container mt-10"
         >
-          <Link href="/">
+          <Link className="card" href="/shop-service/lipo-laser">
             <Image
               src="/images/lipo-Laser.jpg"
               alt="My Image"
@@ -76,14 +76,17 @@ const index = () => {
               height={500}
               className="w-full"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Lipo Laser
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               *Minimum purchase required. Participating locations only.
             </p>
           </Link>
-          <Link href="">
+          <Link
+            className="card"
+            href="/shop-service/fat-freezing-cryolipolysis"
+          >
             <Image
               src="/images/Fat-Freezing.jpg"
               alt="My Image"
@@ -91,14 +94,14 @@ const index = () => {
               height={500}
               className="w-full"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Fat Freeze Cryolipolysis
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               *Minimum purchase required. Participating location only.
             </p>
           </Link>
-          <Link href="">
+          <Link className="card" href="/shop-service/emt">
             <Image
               src="/images/EMS-Shimming.jpg"
               alt="My Image"
@@ -106,14 +109,14 @@ const index = () => {
               height={500}
               className="w-full"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Ems Slimming Machine
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               *Minimum purchase required. Participating location only.
             </p>
           </Link>
-          <Link href="">
+          <Link className="card" href="/shop-service/7d-hifu-system">
             <Image
               src="/images/7dhifu.jpg"
               alt="My Image"
@@ -121,10 +124,10 @@ const index = () => {
               height={500}
               className="w-full"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               7D Hifu System
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               *Minimum purchase required. Participating location only.
             </p>
           </Link>
@@ -150,12 +153,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               7D HIFU System
             </h2>
-            <p className="text-center">Get silky smooth skin for life</p>
+            <p className="text-center card-hover-color">
+              Get silky smooth skin for life
+            </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -171,14 +176,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               EMS Slimming Machine
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               It is hailed as a non-invasive and non-surgical treatment
             </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -194,14 +199,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Fat Freezing
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               An easy and simple method for fat deposit removal in your body
             </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -217,14 +222,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Lipo Laser Treatment
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               Treatment will enhance your body aesthetics.
             </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -240,15 +245,15 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Hair Regrowth Treatment
             </h2>
-            <p className="text-center">
+            <p className="text-center card-hover-color">
               Capillus is an FDA approved product that is found to be effective
               with no known side effects.
             </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -264,12 +269,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Dermaplaning
             </h2>
-            <p className="text-center">Get clear smooth skin for life</p>
+            <p className="text-center card-hover-color">
+              Get clear smooth skin for life
+            </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -285,12 +292,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Microneedling
             </h2>
-            <p className="text-center">Get silky smooth skin for life</p>
+            <p className="text-center card-hover-color">
+              Get silky smooth skin for life
+            </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>
@@ -306,12 +315,14 @@ const index = () => {
               height={500}
               className="h-48 w-full rounded-t-xl"
             />
-            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-header">
+            <h2 className="font-bold text-2xl text-center mt-2 mb-1 card-hover-color">
               Laser Hair Removal
             </h2>
-            <p className="text-center">Get silky smooth skin for life</p>
+            <p className="text-center card-hover-color">
+              Get silky smooth skin for life
+            </p>
             <div className="flex justify-center mt-6 mb-3">
-              <button className="border-b border-primary-color card-button">
+              <button className="border-b border-primary-color card-hover-color">
                 See How It Works
               </button>
             </div>

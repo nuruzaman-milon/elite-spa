@@ -81,14 +81,13 @@ select:focus option {
 }
 
 /********** on card hover design its content  ***********/
-.card:hover .card-header,
-.card:hover .card-button {
+.card:hover .card-hover-color {
   color: #002453;
 }
 
-.card:hover .card-header {
+/* .card:hover .card-header {
   text-decoration: underline;
-}
+} */
 
 /********** contact us  ************/
 .top-navbar {
