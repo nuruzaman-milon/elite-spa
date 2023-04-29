@@ -7,7 +7,6 @@ function ParallaxComponent() {
       bgImage="/images/homepage.jpg"
       strength={600}
       bgImageStyle={{ opacity: ".8" }}
-      //   className="filter brightness-75"
     >
       <div style={{ height: "450px" }} className="container">
         <div className="w-1/3 flex flex-col justify-center h-full gap-y-4">

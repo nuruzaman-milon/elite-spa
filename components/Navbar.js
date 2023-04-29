@@ -133,7 +133,7 @@ const Navbar = () => {
             // onMouseEnter={() => handleToogle(true)}
           >
             SERVICES
-            <div className="pt-[2rem]  hidden  absolute left-0 top-5 group-hover:block   z-10">
+            <div className="pt-[2rem]  hidden  absolute left-0 top-5 group-hover:block z-10">
               <ul className="border-2  w-56 z-50 origin-top   shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
                 <li className="block px-4 py-2 text-primary-color hover:bg-gray-100 cursor-pointer hover:font-bold">
                   <Link href="/shop-service">All Services</Link>
@@ -156,8 +156,6 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            {/* {toogle === false && <FontAwesomeIcon icon={faAngleDown} />}
-              {toogle && <FontAwesomeIcon icon={faAngleUp} />} */}
             <FontAwesomeIcon
               className=" group-hover:hidden"
               icon={faAngleDown}
@@ -167,9 +165,8 @@ const Navbar = () => {
               icon={faAngleUp}
             />
           </li>
-          {/* dropdown menu for services  */}
 
-          {/*  */}
+          {/* dropdown menu for services  */}
           <li className={isActive("/packages") ? "active" : "hover:font-bold"}>
             <Link href="/packages">PACKAGES</Link>
           </li>
