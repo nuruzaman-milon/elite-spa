@@ -7,9 +7,9 @@ import AOS from "aos";
 import ScrollTopButton from "@/components/ScrollTopButton";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
-  const allRoute = router.pathname.split("/");
-  const lastRoute = allRoute[allRoute.length - 1];
+  // const router = useRouter();
+  // const allRoute = router.pathname.split("/");
+  // const lastRoute = allRoute[allRoute.length - 1];
 
   // useEffect(() => {
   //   document.title = `Elite Spa - ${
