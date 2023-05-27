@@ -1,14 +1,12 @@
-import Button from "@/components/Button";
 import ButtonUnderline from "@/components/ButtonUnderline";
 import ButtonWithAngle from "@/components/ButtonWithAngle";
 import Layout from "@/components/Layout";
-import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import Head from "next/head";
+import { FaAngleDoubleLeft } from "react-icons/fa";
 
 const index = () => {
   return (
@@ -53,8 +51,8 @@ const index = () => {
                 </h2>
               </div>
               <Link href="/shop-service">
-                <button className="w-max bg-primary-color text-white rounded-full uppercase py-2 px-4 hover:bg-dark-color transition-colors duration-500 ease-in-out text-color-cus">
-                  <FontAwesomeIcon className="mr-1" icon={faAnglesLeft} />
+                <button className="w-max bg-primary-color text-white rounded-full uppercase py-2 px-4 hover:bg-dark-color transition-colors duration-500 ease-in-out text-color-cus flex items-center">
+                  <FaAngleDoubleLeft size={20} className="mr-1" />
                   EXPLORE NOW
                 </button>
               </Link>
@@ -344,7 +342,7 @@ const index = () => {
             placeholder="Your Email"
             required
           />
-          <Button name="submit" />
+          <ButtonWithAngle name="submit"></ButtonWithAngle>
         </div>
 
         {/* carosel */}

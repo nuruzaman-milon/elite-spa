@@ -20,7 +20,7 @@ const ScrollTopButton = () => {
 
   return (
     <div
-      className={`hidden lg:block text-black fixed cursor-pointer bottom-8 right-8 p-3 rounded-full ${
+      className={`block text-black fixed cursor-pointer bottom-8 right-8 p-3 rounded-full ${
         showButton ? "opacity-100" : "opacity-0"
       } transition-opacity`}
       onClick={handleClick}
@@ -29,19 +29,6 @@ const ScrollTopButton = () => {
         <FaArrowUp className="text-gray-600 text-sm" />
       </div>
     </div>
-    // <>
-
-    //   {showButton && (
-    //     <div
-    //       onClick={handleClick}
-    //       className="text-black fixed cursor-pointer bottom-8 p-3 rounded-full"
-    //     >
-    //       <div className="p-2 border-2 border-gray-400 rounded-full bg-white">
-    //         <FaArrowUp className="text-gray-600 text-sm" />
-    //       </div>
-    //     </div>
-    //   )}
-    // </>
   );
 };
 

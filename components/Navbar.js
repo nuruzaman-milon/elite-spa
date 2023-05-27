@@ -1,15 +1,10 @@
-import {
-  faAngleDown,
-  faAngleUp,
-  faBars,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useState } from "react";
 import Button from "./Button";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { FaAngleDown, FaAngleUp, FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   // const [cross, setCross] = useState(false);
@@ -46,8 +41,8 @@ const Navbar = () => {
             onClick={() => handleToogle()}
             className="text-3xl font-bold flex lg:hidden"
           >
-            {toogle === false && <FontAwesomeIcon icon={faBars} />}
-            {toogle && <FontAwesomeIcon className="text-4xl" icon={faXmark} />}
+            {toogle === false && <FaBars size={20} />}
+            {toogle && <FaTimes size={20} />}
           </button>
           {toogle && (
             <div className="block lg:hidden w-full origin-top absolute top-20 shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
@@ -59,10 +54,8 @@ const Navbar = () => {
                 onClick={() => handleDropdownToogle()}
               >
                 SERVICES
-                {dropdownToogle === false && (
-                  <FontAwesomeIcon icon={faAngleDown} />
-                )}
-                {dropdownToogle && <FontAwesomeIcon icon={faAngleUp} />}
+                {dropdownToogle === false && <FaAngleDown size={20} />}
+                {dropdownToogle && <FaAngleUp size={20} />}
               </li>
               {/* dropdown menu for services  */}
               {dropdownToogle && (
@@ -129,8 +122,6 @@ const Navbar = () => {
             ${isActiveForNested ? "active text-color-cus" : ""}
             
            `}
-            // onClick={() => handleToogle()}
-            // onMouseEnter={() => handleToogle(true)}
           >
             SERVICES
             <div className="pt-[2rem]  hidden  absolute left-0 top-5 group-hover:block z-10">
@@ -156,14 +147,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <FontAwesomeIcon
-              className=" group-hover:hidden"
-              icon={faAngleDown}
-            />
-            <FontAwesomeIcon
-              className="hidden group-hover:block"
-              icon={faAngleUp}
-            />
+            <FaAngleDown className="group-hover:hidden" size={20} />
+            <FaAngleUp className="hidden group-hover:block" size={20} />
           </li>
 
           {/* dropdown menu for services  */}
